@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "rechiseledae:block/sky_stone_block_polished_squares",
-    "side": "rechiseledae:block/sky_stone_block_polished_squares",
-    "top": "rechiseledae:block/sky_stone_block_polished_squares"
-  }
-}

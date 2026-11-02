@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "rechiseledae:block/fluix_block_charged_checkerboard",
-    "side": "rechiseledae:block/fluix_block_charged_checkerboard",
-    "top": "rechiseledae:block/fluix_block_charged_checkerboard"
-  }
-}

@@ -74,6 +74,11 @@ public class ChiselingPatternEncoderBlock extends BaseBlock implements EntityHol
     }
 
     @Override
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state){
+        return new ChiselingPatternEncoderBlockEntity(pos, state);
+    }
+
+    @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> builder){
         builder.add(ON);
     }

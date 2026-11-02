@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "rechiseledae:block/fluix_block_enchanted",
-    "side": "rechiseledae:block/fluix_block_enchanted",
-    "top": "rechiseledae:block/fluix_block_enchanted"
-  }
-}

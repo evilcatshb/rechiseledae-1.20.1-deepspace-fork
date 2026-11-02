@@ -93,7 +93,6 @@ public class EntryPreviewWidget extends BaseWidget {
                             capture.putBlock(pos, block);
                     }
                 }
-                capture.updateShapes();
                 for(int x = -xRange; x <= xRange; x++){
                     for(int y = -yRange; y <= yRange; y++){
                         if(Math.abs(x) == xRange || Math.abs(y) == yRange)

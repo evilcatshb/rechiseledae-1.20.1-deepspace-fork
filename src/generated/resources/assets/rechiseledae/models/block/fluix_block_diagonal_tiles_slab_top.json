@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "rechiseledae:block/fluix_block_diagonal_tiles",
-    "side": "rechiseledae:block/fluix_block_diagonal_tiles",
-    "top": "rechiseledae:block/fluix_block_diagonal_tiles"
-  }
-}

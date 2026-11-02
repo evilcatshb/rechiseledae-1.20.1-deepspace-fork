@@ -110,8 +110,6 @@ public class ChiselingPatternEncoderContainer extends BlockEntityBaseContainer<C
 
     @Override
     public boolean stillValid(Player player){
-        if(!super.stillValid(player))
-            return false;
         this.findRecipe();
         return true;
     }

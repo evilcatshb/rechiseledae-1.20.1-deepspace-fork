@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "rechiseledae:block/certus_quartz_block_polished_brick_bordered",
-    "side": "rechiseledae:block/certus_quartz_block_polished_brick_bordered",
-    "top": "rechiseledae:block/certus_quartz_block_polished_brick_bordered"
-  }
-}

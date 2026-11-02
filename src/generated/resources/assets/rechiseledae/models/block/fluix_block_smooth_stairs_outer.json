@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "rechiseledae:block/fluix_block_smooth",
-    "side": "rechiseledae:block/fluix_block_smooth",
-    "top": "rechiseledae:block/fluix_block_smooth"
-  }
-}

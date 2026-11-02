@@ -8,7 +8,6 @@ import com.supermartijn642.core.gui.widget.premade.AbstractButtonWidget;
 import com.supermartijn642.rechiseled.Rechiseled;
 import com.supermartijn642.rechiseled.ae.RechiseledAE;
 import com.supermartijn642.rechiseled.api.chiseling.ItemWithWorth;
-import com.supermartijn642.rechiseled.chiseling.ChiselingRecipeDatapackPlugin;
 import com.supermartijn642.rechiseled.screen.preview.ScreenItemRenderer;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -69,9 +68,6 @@ public class EntryButtonWidget extends AbstractButtonWidget {
                 ResourceLocation recipe = display.entry().recipe();
                 if(recipe != null)
                     tooltips.accept(TextComponents.translation("rechiseledae.chiseling_pattern_encoder.entry.recipe", TextComponents.string(recipe.toString()).color(ChatFormatting.DARK_GRAY).get()).color(ChatFormatting.GRAY).get());
-                ResourceLocation owner = display.entry().owner();
-                if(!owner.equals(ChiselingRecipeDatapackPlugin.IDENTIFIER))
-                    tooltips.accept(TextComponents.translation("rechiseledae.chiseling_pattern_encoder.entry.owner", TextComponents.string(owner.toString()).color(ChatFormatting.DARK_GRAY).get()).color(ChatFormatting.GRAY).get());
             }
         }
     }

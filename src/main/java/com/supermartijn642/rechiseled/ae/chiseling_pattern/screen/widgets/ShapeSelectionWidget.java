@@ -21,9 +21,9 @@ import java.util.function.Supplier;
 public class ShapeSelectionWidget extends AbstractButtonWidget {
 
     private static final ResourceLocation SHAPE_BUTTONS = RechiseledAE.identifier("textures/screen/shape_buttons.png");
-    private static final ResourceLocation BLOCK_ICON = Rechiseled.identifier("textures/screen/icon_1x1.png");
-    private static final ResourceLocation STAIRS_ICON = Rechiseled.identifier("textures/screen/icon_stairs.png");
-    private static final ResourceLocation SLAB_ICON = Rechiseled.identifier("textures/screen/icon_slab.png");
+    private static final ResourceLocation BLOCK_ICON = new ResourceLocation("rechiseled", "textures/screen/icon_1x1.png");
+    private static final ResourceLocation STAIRS_ICON = new ResourceLocation("rechiseled", "textures/screen/icon_1x1_grey.png");
+    private static final ResourceLocation SLAB_ICON = new ResourceLocation("rechiseled", "textures/screen/icon_1x1_grey.png");
 
     private final ChiselingBlockShape shape;
     private final Supplier<DisplayEntry> currentEntry;

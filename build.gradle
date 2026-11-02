@@ -37,15 +37,15 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     // Core library
-    implementation fg.deobf("curse.maven:supermartijn642s-core-lib-454372:${core_library_file}")
+    implementation fg.deobf(files("libs/supermartijn642corelib-1.1.24-forge-mc1.20.1.jar"))
     // Config library
-    implementation fg.deobf("curse.maven:supermartijn642s-config-lib-438332:${config_library_file}")
+    implementation fg.deobf(files("libs/supermartijn642configlib-1.1.8-forge-mc1.20.jar"))
     // Rechiseled
-    implementation fg.deobf("curse.maven:rechiseled-558998:${rechiseled_file}")
+    implementation fg.deobf(files("libs/rechiseled-1.1.6-forge-mc1.20.jar"))
     // Fusion
     implementation fg.deobf("maven.modrinth:fusion-connected-textures:${fusion_version}")
     // Applied Energistics 2
-    implementation fg.deobf("maven.modrinth:ae2:${applied_energistics_version}")
+    implementation fg.deobf(files("libs/appliedenergistics2-forge-15.4.10.jar"))
     // GuideME
     runtimeOnly fg.deobf("maven.modrinth:guideme:${guideme_version}")
 
@@ -157,6 +157,39 @@ tasks.register('prepareDataResources', Sync) {
 tasks.configureEach {
     if (it.name == "prepareRunData" || it.name == "prepareRunDataCompile")
         it.dependsOn "prepareDataResources"
+}
+
+// Prevent stale RechiseledAE block IDs from ever being packaged into block tags.
+// Rechiseled 1.1.6 does not provide the newer stairs/slabs block-builder API, so
+// every rechiseledae:* tag entry must correspond to an actually generated blockstate.
+tasks.register("validateRechiseledAEMiningTags") {
+    doLast {
+        def blockstatesDir = file("src/generated/resources/assets/rechiseledae/blockstates")
+        def actualBlocks = blockstatesDir.exists() ? blockstatesDir.listFiles()
+            .findAll { it.name.endsWith(".json") }
+            .collect { it.name.substring(0, it.name.length() - 5) } as Set : [] as Set
+
+        def invalid = []
+        fileTree("src/generated/resources/data/minecraft/tags/blocks").matching { include "**/*.json" }.files.each { tagFile ->
+            def json = new groovy.json.JsonSlurper().parse(tagFile)
+            (json.values ?: []).each { value ->
+                if (value instanceof String && value.startsWith("rechiseledae:")) {
+                    def blockId = value.substring("rechiseledae:".length())
+                    if (!actualBlocks.contains(blockId))
+                        invalid << "${tagFile}: ${value}"
+                }
+            }
+        }
+
+        if (!invalid.isEmpty())
+            throw new GradleException("Invalid RechiseledAE block tag references found:\n" + invalid.join("\n"))
+
+        logger.lifecycle("RechiseledAE block-tag validation passed: ${actualBlocks.size()} generated blockstates checked.")
+    }
+}
+
+tasks.named("build").configure {
+    dependsOn("validateRechiseledAEMiningTags")
 }
 
 // Force the jar to be reobfuscated

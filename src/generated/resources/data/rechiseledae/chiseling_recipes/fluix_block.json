@@ -2,160 +2,73 @@
   "type": "rechiseled:chiseling",
   "entries": [
     {
-      "block": "rechiseledae:fluix_block_bordered",
-      "connecting_block": "rechiseledae:fluix_block_bordered_connecting",
-      "connecting_slab": "rechiseledae:fluix_block_bordered_slab_connecting",
-      "connecting_slab_worth": 0.5,
-      "connecting_stairs": "rechiseledae:fluix_block_bordered_stairs_connecting",
-      "slab": "rechiseledae:fluix_block_bordered_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_bordered_stairs"
+      "item": "rechiseledae:fluix_block_bordered",
+      "connecting_item": "rechiseledae:fluix_block_bordered_connecting"
     },
     {
-      "block": "rechiseledae:fluix_block_bricks",
-      "connecting_block": "rechiseledae:fluix_block_bricks_connecting",
-      "connecting_slab": "rechiseledae:fluix_block_bricks_slab_connecting",
-      "connecting_slab_worth": 0.5,
-      "connecting_stairs": "rechiseledae:fluix_block_bricks_stairs_connecting",
-      "slab": "rechiseledae:fluix_block_bricks_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_bricks_stairs"
+      "item": "rechiseledae:fluix_block_bricks",
+      "connecting_item": "rechiseledae:fluix_block_bricks_connecting"
     },
     {
-      "block": "rechiseledae:fluix_block_charged",
-      "connecting_block": "rechiseledae:fluix_block_charged_connecting",
-      "connecting_slab": "rechiseledae:fluix_block_charged_slab_connecting",
-      "connecting_slab_worth": 0.5,
-      "connecting_stairs": "rechiseledae:fluix_block_charged_stairs_connecting",
-      "slab": "rechiseledae:fluix_block_charged_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_charged_stairs"
+      "item": "rechiseledae:fluix_block_charged",
+      "connecting_item": "rechiseledae:fluix_block_charged_connecting"
     },
     {
-      "block": "rechiseledae:fluix_block_charged_bricks",
-      "connecting_block": "rechiseledae:fluix_block_charged_bricks_connecting",
-      "connecting_slab": "rechiseledae:fluix_block_charged_bricks_slab_connecting",
-      "connecting_slab_worth": 0.5,
-      "connecting_stairs": "rechiseledae:fluix_block_charged_bricks_stairs_connecting",
-      "slab": "rechiseledae:fluix_block_charged_bricks_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_charged_bricks_stairs"
+      "item": "rechiseledae:fluix_block_charged_bricks",
+      "connecting_item": "rechiseledae:fluix_block_charged_bricks_connecting"
     },
     {
-      "block": "rechiseledae:fluix_block_charged_checkerboard",
-      "slab": "rechiseledae:fluix_block_charged_checkerboard_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_charged_checkerboard_stairs"
+      "item": "rechiseledae:fluix_block_charged_checkerboard"
     },
     {
-      "block": "rechiseledae:fluix_block_charged_crushed",
-      "connecting_block": "rechiseledae:fluix_block_charged_crushed_connecting",
-      "connecting_slab": "rechiseledae:fluix_block_charged_crushed_slab_connecting",
-      "connecting_slab_worth": 0.5,
-      "connecting_stairs": "rechiseledae:fluix_block_charged_crushed_stairs_connecting",
-      "slab": "rechiseledae:fluix_block_charged_crushed_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_charged_crushed_stairs"
+      "item": "rechiseledae:fluix_block_charged_crushed",
+      "connecting_item": "rechiseledae:fluix_block_charged_crushed_connecting"
     },
     {
-      "block": "rechiseledae:fluix_block_charged_enchanted",
-      "connecting_block": "rechiseledae:fluix_block_charged_enchanted_connecting",
-      "connecting_slab": "rechiseledae:fluix_block_charged_enchanted_slab_connecting",
-      "connecting_slab_worth": 0.5,
-      "connecting_stairs": "rechiseledae:fluix_block_charged_enchanted_stairs_connecting",
-      "slab": "rechiseledae:fluix_block_charged_enchanted_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_charged_enchanted_stairs"
+      "item": "rechiseledae:fluix_block_charged_enchanted",
+      "connecting_item": "rechiseledae:fluix_block_charged_enchanted_connecting"
     },
     {
-      "block": "rechiseledae:fluix_block_charged_smooth",
-      "slab": "rechiseledae:fluix_block_charged_smooth_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_charged_smooth_stairs"
+      "item": "rechiseledae:fluix_block_charged_smooth"
     },
     {
-      "block": "rechiseledae:fluix_block_charged_swirling",
-      "slab": "rechiseledae:fluix_block_charged_swirling_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_charged_swirling_stairs"
+      "item": "rechiseledae:fluix_block_charged_swirling"
     },
     {
-      "block": "rechiseledae:fluix_block_checkerboard",
-      "slab": "rechiseledae:fluix_block_checkerboard_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_checkerboard_stairs"
+      "item": "rechiseledae:fluix_block_checkerboard"
     },
     {
-      "block": "ae2:fluix_block",
-      "connecting_block": "rechiseledae:fluix_block_connecting_connecting",
-      "connecting_slab": "rechiseledae:fluix_block_connecting_slab_connecting",
-      "connecting_slab_worth": 0.5,
-      "connecting_stairs": "rechiseledae:fluix_block_connecting_stairs_connecting",
-      "slab": "ae2:fluix_slab",
-      "slab_worth": 0.5,
-      "stairs": "ae2:fluix_stairs"
+      "item": "ae2:fluix_block",
+      "connecting_item": "rechiseledae:fluix_block_connecting_connecting"
     },
     {
-      "block": "rechiseledae:fluix_block_crushed",
-      "slab": "rechiseledae:fluix_block_crushed_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_crushed_stairs"
+      "item": "rechiseledae:fluix_block_crushed"
     },
     {
-      "block": "rechiseledae:fluix_block_decorated",
-      "slab": "rechiseledae:fluix_block_decorated_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_decorated_stairs"
+      "item": "rechiseledae:fluix_block_decorated"
     },
     {
-      "block": "rechiseledae:fluix_block_diagonal_tiles",
-      "slab": "rechiseledae:fluix_block_diagonal_tiles_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_diagonal_tiles_stairs"
+      "item": "rechiseledae:fluix_block_diagonal_tiles"
     },
     {
-      "block": "rechiseledae:fluix_block_enchanted",
-      "connecting_block": "rechiseledae:fluix_block_enchanted_connecting",
-      "connecting_slab": "rechiseledae:fluix_block_enchanted_slab_connecting",
-      "connecting_slab_worth": 0.5,
-      "connecting_stairs": "rechiseledae:fluix_block_enchanted_stairs_connecting",
-      "slab": "rechiseledae:fluix_block_enchanted_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_enchanted_stairs"
+      "item": "rechiseledae:fluix_block_enchanted",
+      "connecting_item": "rechiseledae:fluix_block_enchanted_connecting"
     },
     {
-      "block": "rechiseledae:fluix_block_smooth",
-      "slab": "rechiseledae:fluix_block_smooth_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_smooth_stairs"
+      "item": "rechiseledae:fluix_block_smooth"
     },
     {
-      "block": "rechiseledae:fluix_block_squares",
-      "slab": "rechiseledae:fluix_block_squares_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_squares_stairs"
+      "item": "rechiseledae:fluix_block_squares"
     },
     {
-      "block": "rechiseledae:fluix_block_swirling",
-      "slab": "rechiseledae:fluix_block_swirling_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_swirling_stairs"
+      "item": "rechiseledae:fluix_block_swirling"
     },
     {
-      "block": "rechiseledae:fluix_block_tiles",
-      "connecting_block": "rechiseledae:fluix_block_tiles_connecting",
-      "connecting_slab": "rechiseledae:fluix_block_tiles_slab_connecting",
-      "connecting_slab_worth": 0.5,
-      "connecting_stairs": "rechiseledae:fluix_block_tiles_stairs_connecting",
-      "slab": "rechiseledae:fluix_block_tiles_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_tiles_stairs"
+      "item": "rechiseledae:fluix_block_tiles",
+      "connecting_item": "rechiseledae:fluix_block_tiles_connecting"
     },
     {
-      "block": "rechiseledae:fluix_block_woven",
-      "slab": "rechiseledae:fluix_block_woven_slab",
-      "slab_worth": 0.5,
-      "stairs": "rechiseledae:fluix_block_woven_stairs"
+      "item": "rechiseledae:fluix_block_woven"
     }
   ],
   "overwrite": false

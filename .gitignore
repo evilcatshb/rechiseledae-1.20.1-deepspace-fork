@@ -39,3 +39,23 @@ logs/
 images/
 reference/
 desktop.ini
+
+# DeepSpace local investigation/build scratch (not source)
+.inspect116/
+.tmp_rechiseled_*/
+*.BAK*
+*.bak
+*.pre116.bak
+*.pre_port.bak
+build-*.cmd
+build-*.out
+build-*.err
+build-*.pid
+build-*.status
+build-deepspace-*.log
+gradle-help-fix.*
+runData116.cmd
+rundata-bg*.*
+validate-mining-tags.*
+build116.cmd
+final-validation.*

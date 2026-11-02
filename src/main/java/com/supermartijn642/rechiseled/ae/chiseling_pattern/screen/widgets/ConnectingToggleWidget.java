@@ -20,8 +20,8 @@ import java.util.function.Supplier;
 public class ConnectingToggleWidget extends AbstractButtonWidget {
 
     private static final ResourceLocation TOGGLE_BUTTONS = RechiseledAE.identifier("textures/screen/toggle_buttons.png");
-    private static final ResourceLocation ICON_CONNECTED_ON = Rechiseled.identifier("textures/screen/icon_connecting_true.png");
-    private static final ResourceLocation ICON_CONNECTED_OFF = Rechiseled.identifier("textures/screen/icon_connecting_false.png");
+    private static final ResourceLocation ICON_CONNECTED_ON = new ResourceLocation("rechiseled", "textures/screen/icon_connecting_true.png");
+    private static final ResourceLocation ICON_CONNECTED_OFF = new ResourceLocation("rechiseled", "textures/screen/icon_connecting_false.png");
 
     private final Supplier<Boolean> connecting;
     private final Supplier<DisplayEntry> currentEntry;

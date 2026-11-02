@@ -4,6 +4,7 @@ import appeng.core.definitions.AEBlocks;
 import com.supermartijn642.core.block.BlockProperties;
 import com.supermartijn642.rechiseled.api.blocks.BlockSpecification;
 import com.supermartijn642.rechiseled.api.blocks.RechiseledBlockBuilder;
+import com.supermartijn642.rechiseled.ae.RechiseledAEBlockCompatBuilder;
 import com.supermartijn642.rechiseled.api.blocks.RechiseledBlockType;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
@@ -20,7 +21,7 @@ public class RechiseledAEBlocks {
 
     // Certus quartz block
     private static final Consumer<BlockProperties> CERTUS_QUARTZ_BLOCK_BLOCK_PROPERTIES = p -> p.sound(SoundType.STONE).mapColor(MapColor.COLOR_CYAN).destroyTime(3).explosionResistance(5).requiresCorrectTool();
-    private static final Consumer<RechiseledBlockBuilder> CERTUS_QUARTZ_BLOCK_CONFIGURER = b -> b.properties(CERTUS_QUARTZ_BLOCK_BLOCK_PROPERTIES).miningTagsFrom(() -> Blocks.QUARTZ_BLOCK).recipe(RechiseledAERecipes.CERTUS_QUARTZ_BLOCK).itemAndBlockTag(RechiseledAE.identifier("certus_quartz_block")).withStairs(s -> s.itemAndBlockTag(RechiseledAE.identifier("certus_quartz_block_stairs"))).withSlabs(s -> s.itemAndBlockTag(RechiseledAE.identifier("certus_quartz_block_slabs")));
+    private static final Consumer<RechiseledAEBlockCompatBuilder> CERTUS_QUARTZ_BLOCK_CONFIGURER = b -> b.properties(CERTUS_QUARTZ_BLOCK_BLOCK_PROPERTIES).miningTagsFrom(() -> Blocks.QUARTZ_BLOCK).recipe(RechiseledAERecipes.CERTUS_QUARTZ_BLOCK).itemAndBlockTag(RechiseledAE.identifier("certus_quartz_block"));
     public static final RechiseledBlockType CERTUS_QUARTZ_BLOCK_BRICK_BORDERED = create("certus_quartz_block_brick_bordered", "Brick Bordered Certus Quartz Block").configure(CERTUS_QUARTZ_BLOCK_CONFIGURER).build();
     public static final RechiseledBlockType CERTUS_QUARTZ_BLOCK_BRICKS = create("certus_quartz_block_bricks", "Certus Quartz Bricks").configure(CERTUS_QUARTZ_BLOCK_CONFIGURER).regularVariant(() -> AEBlocks.QUARTZ_BRICKS.block(), () -> AEBlocks.QUARTZ_BRICK_STAIRS.block(), () -> AEBlocks.QUARTZ_BRICK_SLAB.block()).build();
     public static final RechiseledBlockType CERTUS_QUARTZ_BLOCK_CHISELED = create("certus_quartz_block_chiseled", "Chiseled Certus Quartz Block").configure(CERTUS_QUARTZ_BLOCK_CONFIGURER).noConnectingVariant().build();
@@ -56,7 +57,7 @@ public class RechiseledAEBlocks {
     public static final RechiseledBlockType CERTUS_QUARTZ_BLOCK_TILES = create("certus_quartz_block_tiles", "Certus Quartz Tiles").configure(CERTUS_QUARTZ_BLOCK_CONFIGURER).build();
     // Fluix block
     private static final Consumer<BlockProperties> FLUIX_BLOCK_BLOCK_PROPERTIES = p -> p.sound(SoundType.STONE).mapColor(MapColor.COLOR_PURPLE).destroyTime(3).explosionResistance(5).requiresCorrectTool();
-    private static final Consumer<RechiseledBlockBuilder> FLUIX_BLOCK_CONFIGURER = b -> b.properties(FLUIX_BLOCK_BLOCK_PROPERTIES).miningTagsFrom(() -> Blocks.QUARTZ_BLOCK).recipe(RechiseledAERecipes.FLUIX_BLOCK).itemAndBlockTag(RechiseledAE.identifier("fluix_block")).withStairs(s -> s.itemAndBlockTag(RechiseledAE.identifier("fluix_block_stairs"))).withSlabs(s -> s.itemAndBlockTag(RechiseledAE.identifier("fluix_block_slabs")));
+    private static final Consumer<RechiseledAEBlockCompatBuilder> FLUIX_BLOCK_CONFIGURER = b -> b.properties(FLUIX_BLOCK_BLOCK_PROPERTIES).miningTagsFrom(() -> Blocks.QUARTZ_BLOCK).recipe(RechiseledAERecipes.FLUIX_BLOCK).itemAndBlockTag(RechiseledAE.identifier("fluix_block"));
     public static final RechiseledBlockType FLUIX_BLOCK_BORDERED = create("fluix_block_bordered", "Bordered Fluix Block").configure(FLUIX_BLOCK_CONFIGURER).build();
     public static final RechiseledBlockType FLUIX_BLOCK_BRICKS = create("fluix_block_bricks", "Fluix Bricks").configure(FLUIX_BLOCK_CONFIGURER).build();
     public static final RechiseledBlockType FLUIX_BLOCK_CHARGED = create("fluix_block_charged", "Charged Fluix Block").configure(FLUIX_BLOCK_CONFIGURER).build();
@@ -79,7 +80,7 @@ public class RechiseledAEBlocks {
     public static final RechiseledBlockType FLUIX_BLOCK_WOVEN = create("fluix_block_woven", "Woven Fluix Block").configure(FLUIX_BLOCK_CONFIGURER).noConnectingVariant().build();
     // Sky stone block
     private static final Consumer<BlockProperties> SKY_STONE_BLOCK_BLOCK_PROPERTIES = p -> p.sound(SoundType.STONE).mapColor(MapColor.COLOR_BLACK).destroyTime(5).explosionResistance(150).requiresCorrectTool();
-    private static final Consumer<RechiseledBlockBuilder> SKY_STONE_BLOCK_CONFIGURER = b -> b.properties(SKY_STONE_BLOCK_BLOCK_PROPERTIES).blockTag(BlockTags.MINEABLE_WITH_PICKAXE.location()).blockTag(BlockTags.NEEDS_IRON_TOOL.location()).recipe(RechiseledAERecipes.SKY_STONE_BLOCK).itemAndBlockTag(RechiseledAE.identifier("sky_stone_block")).withStairs(s -> s.itemAndBlockTag(RechiseledAE.identifier("sky_stone_block_stairs"))).withSlabs(s -> s.itemAndBlockTag(RechiseledAE.identifier("sky_stone_block_slabs")));
+    private static final Consumer<RechiseledAEBlockCompatBuilder> SKY_STONE_BLOCK_CONFIGURER = b -> b.properties(SKY_STONE_BLOCK_BLOCK_PROPERTIES).blockTag(BlockTags.MINEABLE_WITH_PICKAXE.location()).blockTag(BlockTags.NEEDS_IRON_TOOL.location()).recipe(RechiseledAERecipes.SKY_STONE_BLOCK).itemAndBlockTag(RechiseledAE.identifier("sky_stone_block"));
     public static final RechiseledBlockType SKY_STONE_BLOCK_BRICK_BORDERED = create("sky_stone_block_brick_bordered", "Brick Bordered Sky Stone Block").configure(SKY_STONE_BLOCK_CONFIGURER).build();
     public static final RechiseledBlockType SKY_STONE_BLOCK_BRICK_PATTERN = create("sky_stone_block_brick_pattern", "Sky Stone Brick Pattern").configure(SKY_STONE_BLOCK_CONFIGURER).build();
     public static final RechiseledBlockType SKY_STONE_BLOCK_BRICKS = create("sky_stone_block_bricks", "Sky Stone Bricks").configure(SKY_STONE_BLOCK_CONFIGURER).regularVariant(() -> AEBlocks.SKY_STONE_BRICK.block(), () -> AEBlocks.SKY_STONE_BRICK_STAIRS.block(), () -> AEBlocks.SKY_STONE_BRICK_SLAB.block()).build();
@@ -100,8 +101,8 @@ public class RechiseledAEBlocks {
     public static final RechiseledBlockType SKY_STONE_BLOCK_TILES = create("sky_stone_block_tiles", "Sky Stone Tiles").configure(SKY_STONE_BLOCK_CONFIGURER).build();
     public static final RechiseledBlockType SKY_STONE_BRICKS = create("sky_stone_bricks", "Sky Stone Bricks").configure(SKY_STONE_BLOCK_CONFIGURER).build();
 
-    private static RechiseledBlockBuilder create(String identifier, String translation){
-        return RechiseledAE.REGISTRATION.block(identifier).translation(translation);
+    private static RechiseledAEBlockCompatBuilder create(String identifier, String translation){
+        return new RechiseledAEBlockCompatBuilder(RechiseledAE.REGISTRATION.block(identifier).translation(translation));
     }
 
     public static void init(){
